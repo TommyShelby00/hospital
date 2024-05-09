@@ -1,0 +1,16 @@
+server:
+  port: 8083
+feign:
+  okhttp:
+    enabled: true # 开启OKHttp连接池支持
+hp:
+  swagger:
+    title: 用户服务接口文档
+    package: com.hp.schedule
+  db:
+    database: schedule-service
+  mq:
+    host: 192.168.11.168
+    port: 5672
+    un: admin
+    pw: 123456

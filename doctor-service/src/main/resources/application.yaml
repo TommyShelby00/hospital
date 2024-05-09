@@ -1,0 +1,25 @@
+server:
+  port: 8082
+feign:
+  okhttp:
+    enabled: true # 开启OKHttp连接池支持
+hp:
+  swagger:
+    title: 用户服务接口文档
+    package: com.hp.doctor.controller
+  db:
+    database: doctor-service
+  mq:
+    host: 192.168.11.168
+    port: 5672
+    un: admin
+    pw: 123456
+spring:
+  config:
+    import: classpath:/config/application.yml
+aliyun:
+  oss:
+    endpoint: ${aliyun.oss.endpoint}
+    accessKeyId: ${aliyun.oss.accessKeyId}
+    accessKeySecret: ${aliyun.oss.accessKeySecret}
+    bucketName: ${aliyun.oss.bucketName}

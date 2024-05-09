@@ -1,0 +1,28 @@
+server:
+  port: 8085
+feign:
+  okhttp:
+    enabled: true # 开启OKHttp连接池支持
+hp:
+  swagger:
+    title: 用户服务接口文档
+    package: com.hp.pay
+  db:
+    database: pay-service
+  mq:
+    host: 192.168.11.168
+    port: 5672
+    un: admin
+    pw: 123456
+spring:
+  config:
+    import: classpath:/config/application.yml
+alipay:
+  #APPID
+  appId: ${zfb.appId}
+  #应用私钥
+  appPrivateKey: ${zfb.appPrivateKey}
+  #支付宝公钥
+  alipayPublicKey: ${zfb.alipayPublicKey}
+  #网关
+  gatewayUrl: ${zfb.gatewayUrl}

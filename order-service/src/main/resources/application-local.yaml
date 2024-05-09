@@ -1,0 +1,11 @@
+hp:
+  db:
+    host: 192.168.11.168 # 修改为你自己的虚拟机IP地址
+    un: root
+    pw: 123 # 修改为docker中的MySQL密码
+  redis:
+    host: 192.168.11.168
+    port: 6379
+    password: 123
+    database: 0
+

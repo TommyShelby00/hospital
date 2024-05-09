@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Redirect Page</title>
+</head>
+<body>
+<!-- 自动跳转到另一个地址 -->
+<script th:inline="javascript">
+    setTimeout(function() {
+        window.location.href = /* 添加你要跳转的地址，例如： */ 'http://localhost:7070/home';
+    }, 3000); // 设置自动跳转的延迟时间，单位为毫秒
+</script>
+
+<h1 style="color: brown">支付失败，正在跳转页面.........</h1>
+</body>
+</html>

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: order-service # 服务名称
+  profiles:
+    active: local
+  cloud:
+    nacos:
+      server-addr: 192.168.11.168:8848 # nacos地址
+      config:
+        file-extension: yaml # 文件后缀名
+        shared-configs: # 共享配置
+          - dataId: shared-jdbc.yaml # 共享mybatis配置
+          - dataId: shared-log.yaml # 共享日志配置
+          - dataId: shared-swagger.yaml # 共享日志配置
+          - dataId: shared-rabbitmq.yaml # 共享rabbitmq配置
+          - dataId: sa-token.yaml # sa-token配置
+          - dataId: shared-redis.yaml

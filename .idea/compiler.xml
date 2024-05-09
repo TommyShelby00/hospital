@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="aliyun-oss-spring-boot-starter" />
+        <module name="pay-service" />
+        <module name="schedule-service" />
+        <module name="doctor-service" />
+        <module name="hp-common" />
+        <module name="hp-gateway" />
+        <module name="user-service" />
+        <module name="order-service" />
+        <module name="aliyun-oss-spring-boot-autoconfigure" />
+        <module name="hp-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="aliyun-oss-spring-boot-autoconfigure" options="-parameters" />
+      <module name="aliyun-oss-spring-boot-starter" options="-parameters" />
+      <module name="doctor-service" options="-parameters" />
+      <module name="hp-api" options="-parameters" />
+      <module name="hp-common" options="-parameters" />
+      <module name="hp-gateway" options="-parameters" />
+      <module name="order-service" options="-parameters" />
+      <module name="pay-service" options="-parameters" />
+      <module name="schedule-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+    </option>
+  </component>
+</project>

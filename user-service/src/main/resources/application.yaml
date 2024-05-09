@@ -1,0 +1,25 @@
+server:
+  port: 8081
+feign:
+  okhttp:
+    enabled: true # 开启OKHttp连接池支持
+hp:
+  swagger:
+    title: 用户服务接口文档
+    package: com.hp.user.controller
+  db:
+    database: user-service
+  jwt:
+    location: classpath:hmall.jks # 秘钥地址
+    alias: hmall # 秘钥别名
+    password: hmall123 # 秘钥文件密码
+    tokenTTL: 30m # 登录有效期
+spring:
+  config:
+    import: classpath:/config/application.yml
+aliyun:
+  oss:
+    endpoint: ${aliyun.oss.endpoint}
+    accessKeyId: ${aliyun.oss.accessKeyId}
+    accessKeySecret: ${aliyun.oss.accessKeySecret}
+    bucketName: ${aliyun.oss.bucketName}

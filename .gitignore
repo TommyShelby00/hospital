@@ -22,3 +22,19 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/hp-common/src/main/resources/config/application.yml
+/user-service/target/
+/schedule-service/target/
+/pay-service/target/
+/order-service/target/
+/hp-gateway/target/
+/hp-common/target/
+/hp-api/target/
+/doctor-service/target/
+/logs/
+/aliyun-oss-spring-boot-starter/.gitignore
+/aliyun-oss-spring-boot-autoconfigure/.gitignore
+/.idea/.gitignore
+/hp-gateway/src/main/resources/hmall.jks
+/user-service/src/main/resources/hmall.jks
+/doctor-service/src/test/java/com/hp/doctor/test1.java
